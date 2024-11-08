@@ -20,7 +20,7 @@
         font-family: Arial, Helvetica, sans-serif;
         cursor: pointer;
       }
-      .carousel {
+      .carausol {
         margin-top: 5px;
         margin-left: 3px;
         margin-right: 5px;
@@ -28,7 +28,13 @@
         padding: 5px;
       }
       .carousel-item {
+        /* margin-top: 5px; */
+        /* margin-left: 5px;
+        margin-right: 5px; */
+
         height: 60vh;
+
+        /* width: 90%; */
       }
       .card-1 {
         margin-top: 10px;
@@ -36,24 +42,14 @@
         border-radius: 5px;
         padding: 5px;
       }
-      .card-group {
+      .card-group{
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
-      }
-      .card {
-        flex: 1 1 30%;
-      }
-      @media (min-width: 414px) and (min-height: 896px) {
-        .carousel-item {
-          height: auto;
-          width: fit-content;
-        }
       }
     </style>
   </head>
   <body>
-    <div class="carousel">
+    <div class="carausol">
       <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -98,49 +94,36 @@
         </button>
       </div>
       
-      <div class="card-group" style="margin-top: 10px;">
-        <div class="card">
-          <img
-            src="https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?auto=compress&cs=tinysrgb&w=600"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
+      <div class="card-group"style=" margin-top: 10px;
+      
+      gap: 5px;
+     
+    
+      ">
+        <div class="card"  >
+          <img src="https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="...">
+          <div class="card-body"  >
             <h4 class="card-title" style="font-weight: 100;">Himachal</h4>
-            <p class="card-text">
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-            </p>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+           
           </div>
         </div>
         <div class="card">
-          <img
-            src="https://images.pexels.com/photos/724712/pexels-photo-724712.jpeg?auto=compress&cs=tinysrgb&w=600"
-            class="card-img-top"
-            alt="..."
-          />
+          <img src="https://images.pexels.com/photos/724712/pexels-photo-724712.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This card has supporting text below as a natural lead-in to additional content.
-            </p>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
             <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
           </div>
         </div>
         <div class="card">
-          <img
-            src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=600"
-            class="card-img-top"
-            alt="..."
-          />
+          <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
-            </p>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
             <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
           </div>
         </div>
       </div>
-    </div>
   </body>
 </html>
